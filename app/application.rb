@@ -29,3 +29,12 @@ class Application
     end
   end
 end
+
+Shopping Cart Rack App = Application.new
+elsif req.path.match(/cart/)
+  @@cart.each do |item|
+    resp.write "#{item}\n"
+  end
+elsif req.path.match(/add/)
+  search_term = req.params["item"]
+  resp.write handle_search(search_term)
