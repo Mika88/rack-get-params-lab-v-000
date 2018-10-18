@@ -42,7 +42,7 @@ class Application
 
   def add(add_term)
     if @@items.include?(add_term)
-      @@items << add_term
+      @@cart << add_term
       return "added #{add_term}"
     else
      return "We don't have that item"
