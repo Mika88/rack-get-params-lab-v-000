@@ -45,5 +45,6 @@ class Application
       return " added #{add_term}"
     else
      return "We don't have that item"
-   end
+    end
+  end
 end
